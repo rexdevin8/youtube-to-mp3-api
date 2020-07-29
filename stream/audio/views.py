@@ -22,7 +22,7 @@ class AudioView(APIView):
         if url is None:
             error_response = ErrorResponse(
                 error=ErrorType.bad_request,
-                reason="youtube_url is not found."
+                reason="url(youtube) is not found. The url must be in this format `<heroku_app>.herokuapp.com/?url=<youtube_url>`"
             )
             return (None, error_response)
         stream = AudioStream(youtube_url=url)
@@ -30,7 +30,7 @@ class AudioView(APIView):
         if not isinstance(video_info, AudioStream._Audio):
             error_response = ErrorResponse(
                 error=ErrorType.bad_request,
-                reason="youtube url could not be verified."
+                reason="url(youtube) could not be verified."
             )
             return (None, error_response)
         return (video_info.toJSON(), None)
