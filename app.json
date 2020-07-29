@@ -1,0 +1,20 @@
+
+{
+  "name": "youtube-to-mp3-api",
+  "description": "Simple youtube mp3 converter api project",
+  "keywords": [
+    "youtube-dl",
+    "django",
+    "api",
+    "mp3"
+  ],
+  "repository": "https://github.com/yasinkbas/youtube-to-mp3-api",
+  "logo": "",
+  "success_url": "",
+  "env": {
+    "DISABLE_COLLECTSTATIC": {
+      "description": "The collectstatic disabled for this project",
+      "value": "1"
+    }
+  }
+}
