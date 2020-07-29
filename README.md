@@ -5,7 +5,7 @@
 **Url**: [**your-heroku-app-name**].herokuapp.com/?url=[**your-youtube-url**]
 <br>**Example**: https://youtube-to-mp3-api.herokuapp.com/?url=https://www.youtube.com/watch?v=hn3wJ1_1Zsg
 
-#####Output:
+####Output
 
 ```bash
 {
@@ -19,4 +19,6 @@
 }
 ```
 
-**Note**: This project base on [youtube-dl](https://github.com/ytdl-org/youtube-dl) if you can get error like `Bad Request` or  mp3 file does not work. Probably the problem is caused by youtube-dl
+####Important
+
+ This project just built for fun and based on [youtube-dl](https://github.com/ytdl-org/youtube-dl). This means if you get error like `Bad Request` or mp3 file does not work, probably the problem is caused by youtube-dl see: [issues](https://github.com/ytdl-org/youtube-dl/issues)
